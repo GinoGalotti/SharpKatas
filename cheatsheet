@@ -1,0 +1,10 @@
+To create a new library:
+
+dotnet new classlib
+dotnet new nunit (Test)
+
+Add them to solution
+
+dotnet sln add X.csproj
+
+create a new SLN too
