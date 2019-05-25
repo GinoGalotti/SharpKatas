@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+    <ItemGroup>
+    <Compile Remove="weather.dat\**" />
+    <EmbeddedResource Remove="weather.dat\**" />
+    <None Remove="weather.dat\**" />
+  </ItemGroup>
+
+    <ItemGroup>
+    <None Update="weather.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
